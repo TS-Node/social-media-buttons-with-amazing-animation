@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+	<style type="text/css">
+		@charset "utf-8";
+/* CSS Document */
+
+/* ---------- FONTAWESOME ---------- */
+/* ---------- http://fortawesome.github.com/Font-Awesome/ ---------- */
+/* ---------- http://weloveiconfonts.com/ ---------- */
+
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+/* ---------- ERIC MEYER'S RESET CSS ---------- */
+/* ---------- http://meyerweb.com/eric/tools/css/reset/ ---------- */
+
+@import url(http://meyerweb.com/eric/tools/css/reset/reset.css);
+
+/* ---------- FONTAWESOME ---------- */
+
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+/* ---------- GENERAL ---------- */
+
+body {
+	background-color: #798498;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 1.5em;
+}
+
+a { text-decoration: none; }
+
+.float-left { float: left; }
+.float-right { float: right; }
+
+.clearfix { *zoom: 1; }
+.clearfix:before, .clearfix:after {
+	display: table;
+	content: "";
+}
+.clearfix:after { clear: both; }
+
+
+/* ---------- NAVIGATION ---------- */
+
+nav {
+	margin: 150px auto;
+	width: 60px;
+}
+
+nav ul {
+	/*background-color: #505664;*/
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	display: inline-table;
+	position: relative;
+	list-style-type: none;
+}
+
+nav ul li {
+	float: left;
+}
+
+nav ul li a {
+	color: #bed4d4;
+	display: block;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	width: 60px;
+	transition: .5s;
+}
+
+nav ul li a:hover{
+	color: #fff;
+	transform: scale(1.5);
+	transition: .5s;
+}
+
+nav ul li ul {
+	background-color: #5c4664;
+	margin-top: 20px;
+	padding: 5px 0;
+	list-style-type: none;
+	position: absolute;
+}
+
+nav ul li ul:before {
+	background-color: #5c4664;
+	content: "";
+	display: block;
+	height: 8px;
+	left: 26px; /* (nav ul li a { width: 60px; } / 2) - (nav ul li ul:before { width: 8px; } / 2) */
+	position: absolute;
+	list-style-type: none;
+	top: -4px;
+	transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	width: 8px;
+	z-index: -1;
+}
+
+nav ul li ul li {
+	float: none;
+}
+
+nav ul li ul li a {
+	color: #fff;
+}
+
+/*nav ul li ul li a:hover {
+	background-color: #5d9799;
+}*/
+	</style>
+	<meta charset="utf-8">
+
+	<title>Social Navigation</title>
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+
+	<nav>
+
+		<ul class="clearfix">
+
+			<li><a href="#" class="btn"><span class="fontawesome-user"></span></a>
+				<ul>
+					<li><a href="#"><span class="fontawesome-linkedin"></span></a></li>
+					<li><a href="#"><span class="fontawesome-google-plus"></span></a></li>
+					<li><a href="#"><span class="fontawesome-twitter"></span></a></li>
+					<li><a href="#"><span class="fontawesome-facebook"></span></a></li>
+
+
+				</ul>
+
+			</li>
+
+		</ul>
+
+	</nav>
+
+</body>
+</html>
